@@ -1,0 +1,25 @@
+*{
+    font-family: "Arial";
+}
+body {
+    background-color: rgb(48, 31, 88);
+}
+label {
+    color: rgb(201, 109, 144);
+}
+select {
+    background-color: rgb(147, 97, 189);
+}
+button{
+    background-color: rgb(177, 26, 26);
+}
+h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(177, 26, 26);
+    text-align: center;
+}
+
+pre {
+    color: rgb(177, 26, 26);
+    font-size: 20px;
+}
