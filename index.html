@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MatchMaker</title>
+    <link rel="stylesheet" href="Style.css"/>
+</head>
+<!-- Part 1 
+Translate Matchmaker into Java
+Put all questions in dictionary. 
+Make function for asking questions. 
+New idea, do not make a class, make a dictionay. 
+keys will be the question: Details will be the weight 
+Make function for checking if response is numerical.
+Make your queries weigh 3 and respones weigh 5 *num=abs((int(num)/5)-(weight/3))
+Differentiate between true love, friand, and putoffs.
+-----------------
+Use external java files.
+Add pictures and animations.
+Christmas theme.
+Ornaments.
+Use classes.
+Use personalized slide for each question.
+*Bonuses Things below*
+*Shuffle dictionary
+-->
+<body>
+    <h1>MatchMaker For Web</h1>
+    <pre>
+    This program figures out if you and I are meant to be.
+    You will answer 5 questions. To each question, answer 5
+    if you strongly agree, 4 if you agree, 3 if you neither
+    agree nor disagree, 2 if you disagree, and 1 if you
+    strongly disagree.
+    </pre>
+    <label>"Video games are cool!"</label>
+    <select id="q1">
+        <option value="5">Strongly Agree</option>
+        <option value="4">Strongly Agree</option>
+        <option value="3">No strong feelings</option>
+        <option value="2">Strongly Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
+    <br/><br/>
+
+    <label>"Love watching sports!"</label>
+    <select id="q2">
+        <option value="5">Strongly Agree</option>
+        <option value="4">Strongly Agree</option>
+        <option value="3">No strong feelings</option>
+        <option value="2">Strongly Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
+    <br/><br/>
+
+    <label>"Cats are beter than dogs!"</label>
+    <select id="q3">
+        <option value="5">Strongly Agree</option>
+        <option value="4">Strongly Agree</option>
+        <option value="3">No strong feelings</option>
+        <option value="2">Strongly Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
+    <br/><br/>
+
+    <label>"Eminem is in the top worst rappers."</label>
+    <select id="q4">
+        <option value="5">Strongly Agree</option>
+        <option value="4">Strongly Agree</option>
+        <option value="3">No strong feelings</option>
+        <option value="2">Strongly Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
+    <br/><br/>
+
+    <label>"Anime is great."</label>
+    <select id="q5">
+        <option value="5">Strongly Agree</option>
+        <option value="4">Strongly Agree</option>
+        <option value="3">No strong feelings</option>
+        <option value="2">Strongly Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
+    <br/><br/>
+    <p id="score"></p>
+    <button onclick="calculate()">Calculate Compatibility</button>
+    <script>
+        //Declare Variables
+        let result1=document.getElementById("q1").selectedOptions[0].value;
+        let result2=document.getElementById("q2").selectedOptions[0].value;
+        let result3=document.getElementById("q3").selectedOptions[0].value;
+        let result4=document.getElementById("q4").selectedOptions[0].value;
+        let result5=document.getElementById("q5").selectedOptions[0].value;
+        //Create Dictionary
+        let queries={
+            result1:5,
+            result2:1,
+            result3:5,
+            result4:1,
+            result5:1
+            }
+        //Make Function
+        function calculate()
+        document.getElementById("score").innerHTML = "Your compatibility is..."
+    </script>
+    <!--Give Results-->
+</body>
+</html>
